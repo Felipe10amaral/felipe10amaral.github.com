@@ -1,0 +1,59 @@
+
+header {
+    background-color: black; 	/* fundo preto do header */
+    padding: 23px;				/* preenchimento do fundo preto */
+
+    text-align: center;			/* Alinhar texto para o centro */
+
+    font-size: 35px;			/* tamanho da fonte */
+
+    color: white; 				/* cor da fonte */
+
+}
+
+nav ul{
+	list-style: none;			/* zerar todas as marcações (tirar a bolinha da lista) */
+	padding: 0;					/* preenchimento zerado */
+
+}
+
+
+nav {
+    float: left;
+    width: 80px;	/* largura do fundo cinza */
+    height: 300px; /* altura do fundo cinza */
+    background: #ccc;
+    padding: 20px;		/* preenchimento do fundo cinza */
+}
+
+
+article {
+   
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; /* only for demonstration, should be removed */
+}
+
+footer {
+    background-color: black;	/* preenchimento do fundo preto */
+    padding: 10px; 
+    text-align: center;
+    color: white;
+}
+
+body {
+    font-family: Arial;
+}
+
+a {
+	text-decoration: none;   /*remover sublinhado do link */
+}
+
+li {
+	display: block;
+	list-style: none;
+	color: black;          
+	margin-bottom: 10px; 	 /* espaçamento entre links */
+	
+}
