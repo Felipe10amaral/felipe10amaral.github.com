@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Formulário
+		</title>
+		<script src="formulario.js"></script>
+	</head>
+	<body>
+		<form class= "" action="" method="post" name="form">
+			
+			<h1>Preencha o formulário abaixo</h1>
+			<fieldset>
+				<legend>Dados Pessoais</legend>
+					<label for="nome">Nome: </label>
+					<input type="text" name="nome" id="nome" >
+					<label for="sobrenome">Sobrenome: </label>
+					<input type="text" name="sobrenome" id="sobrenome">
+					</br>
+					</br>
+					<label for="dt_nascimento">Nascimento: </label>
+					<input type="text" name="dia" size="1" maxlength="2"  id="dia">
+					<input type="text" name="mes" size="1" maxlength="2"  id="mes">
+					<input type="text" name="ano" size="4" maxlength="4"  id="ano">
+					</br>
+					</br>
+					<label for="rg">RG:</label>
+					<input type="text" name="rg" maxlength="12" id="rg">
+					</br>
+					</br>
+					<label for="cpf">CPF:</label>
+					<input type="text" name="cpf" maxlength="11" size="7" id="cpf">
+					<label for="digito">-</label>
+					<input type="text" name="digito" maxlength="2" size="1" id="digito">
+			</fieldset>
+			</br>
+			<fieldset>
+				<legend>Dados de Endereço</legend>
+				<label for="rua">Rua:</label>
+				<input type="text" name="rua" id="rua">
+				<label for="numero">Numero:</label>
+				<input type="text" name="numero" id="numero">
+				</br>
+				</br>
+				<label for="bairro">Bairro:</label>
+				<input type="text" name="bairro" id="bairro">
+				</br>
+				</br>
+				<label for="uf">Estado:</label>
+				<select name="estado" id="estado">
+					<option>Selecione</option>
+					<option>Acre</option>
+					<option>Rio de Janeiro</option>
+					<option>São Paulo</option>
+					<option>Minas Gerais</option>
+				</select>
+				</br>
+				</br>
+				<label for="cidade">Cidade:</label>
+				<input type="text" name="cidade" id="cidade">
+				</br>
+				</br>
+				<label>CEP:</label>
+				<input type="text" name="cep" maxlength="5" size="5" id="cep">
+				<label for="digito_cep">-</label>
+				<input type="text" name="digito_cep" maxlength="3" size="2" id="digito-cep">
+			</fieldset>
+			</br>
+			<fieldset>
+				<legend>Dados de login</legend>
+				<label for="email">E-mail:</label>
+				<input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="email">
+				</br>
+				</br>
+				<label for="conf_email">Confirme o e-mail:</label>
+				<input type="email" name="conf_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="conf_email">
+				</br>
+				</br>
+				<label for="user_name">Login de usuário:</label>
+				<input type="text" name="user_name" id="nome_usuario">
+				</br>
+				</br>
+				<label for="senha">Senha:</label>
+				<input type="password" name="senha" id="senha">
+				</br>
+				</br>
+				<label for="conf_senha">Confirme a senha:</label>
+				<input type="password" name="conf_senha" id="conf_senha">
+			</fieldset>
+			</br>
+			<fieldset>
+				<legend>Pesquisa </legend>
+				
+					<label for="webmaster">Você deseja 
+				trabalhar como Webmaster?</label>
+				
+				
+					<input type="radio" name="opcoes_radio" value="1">Sim</input>
+					</br>
+					<input type="radio" name="opcoes_radio" value="2">Não</input>
+					</br>
+					<input type="radio" name="opcoes_radio" value="3">Talvez</input>
+					</br>
+					<input type="radio" name="opcoes_radio" value="4">Quem sabe</input>
+				
+				</br>
+				
+					</br>
+					</br>
+					<label for="linguagem">O que você deseja aprender?
+					</label>
+				
+				</br>
+				
+					<input type="checkbox" name="ling1" value="1">HTML</input>
+					</br>
+					<input type="checkbox" name="ling2" value="2">CSS</input>
+					</br>
+					<input type="checkbox" name="ling3" value="3">JavaScript</input>
+					</br>
+					<input type="checkbox" name="ling4" value="4">Django</input>
+				
+				</br>
+					</br>
+					</br>
+					</br>
+					<label for="comentario">Deixe seu comentário:</label>
+				
+				</br>
+				
+					<textarea rows="10" cols="50" maxlength="480" name="comentario" id="coment">
+					</textarea>
+				
+			</fieldset>
+			<input type="submit" name="Enviar" onclick="validar()">
+			<input type="reset" name="Limpar">
+		</form>
+	</body>
+</html>
